@@ -1,0 +1,28 @@
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style for the heading (h1) element */
+h1 {
+    color: #0066cc;
+}
+
+/* Style for paragraphs (p) */
+p {
+    line-height: 1.5;
+}
+
+/* Style for links (a) */
+a {
+    color: #990000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

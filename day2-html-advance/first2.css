@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Styling Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .car-section {
+            text-align: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .car-details {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        p {
+            color: #666666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="car-section">
+        <h1>Awesome Car</h1>
+        <img class="car-image" src="car-image.jpg" alt="Awesome Car">
+        <div class="car-details">
+            <p>This is an example of a stylish and awesome car. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula euismod magna, ac volutpat nunc posuere vel.</p>
+        </div>
+    </div>
+
+</body>
+</html>
