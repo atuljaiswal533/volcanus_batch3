@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+table{
+    background-color: aqua;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-spacing: 20px;
+    margin-top: 3rem;
+    border: 2px solid aqua;
+}
+
+th{
+    background-color: yellowgreen;
+    font-size: 1.4rem;
+    border: 2px solid yellow;
+    padding: 10px;
+}
+td{
+    text-align: center;
+    background-color: brown;
+    font-size: 1.4rem;
+    border: 2px solid yellow;
+    padding: 10px;
+}
+th:hover,td:hover{
+    background-color: blueviolet;
+    border-color: aqua;
+    border-radius: 100px;
+    
+}

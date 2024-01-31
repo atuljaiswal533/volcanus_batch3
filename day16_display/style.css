@@ -1,0 +1,59 @@
+body{
+    background-color: aliceblue;
+    color: white;
+}
+h1{
+    background-color: yellow;
+    padding: 20px;
+    height: 30px;
+    display: inline;
+
+}
+span{
+    background-color: brown;
+    padding: 20px;
+    height: 300px;
+    display: inline-block;
+}
+.box1{
+    display:inline-block;
+    background-color: aliceblue;
+    padding: 200px;
+    height: 300px;
+}
+.box2{
+    display:inline-block;
+    background-color: black;
+    padding: 20px;
+    height: 300px;
+    width: 300px; 
+}
+.box3{
+    display:inline-block;
+    background-color: black;
+    padding: 20px;
+    height: 300px;
+    width: 300px; 
+}
+
+.nav{
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    display: inline-block;
+    padding: 20px;
+}
+.box:hover{
+    background-color: brown;
+}
+.items{
+    background-color: yellow;
+    height: 200px;
+    width: 400px;
+    display: inline;
+}
