@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color: white;
+}.box1{
+    background-color: blue;
+    height: 100px;
+}.box2{
+    background-color: green;
+    height: 100px;
+    position: relative;
+    top: 30px;
+
+}
+.box3{
+    background-color: orange;
+    height: 100px;
+    
+}.inside_box{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    position: relative;
+    top: 10px;
+}.inside_box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+}.img{
+    position: relative;
+    width:100px;
+}
+.img img{
+    width: 500px;
+}.inside_img{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}.inside_img img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid yellow;
+}
