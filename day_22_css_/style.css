@@ -1,0 +1,59 @@
+.{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+}
+.nav_bar{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_bar .brand_logo{margin-left: 10px;
+
+
+}
+.nav_bar .right{display: flex;
+    justify-content: center;align-items: center;
+
+}
+.nav_bar .right .items{
+    padding: 20px;
+}
+.nav_bar .right .items:hover{
+    background-color: rgb(57, 48, 48);
+}#about:hover{
+    background-color: yellowgreen;
+    padding: 20px;
+}.drop_down{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#drop_down:hover .drop_down{
+    display: block;
+}
+#drop_down .drop_down{
+    background-color: yellow;
+    position: absolute;
+    top: 3.5rem;
+}
+#drop_down .drop_down .drop_down_items{
+    padding: 20px;
+    text-align: center;
+}
+#drop_down .drop_down .drop_down_items:hover{
+    background-color: blue;
+}.drop_down{
+    display: none;
+}
+.drop_down{
+    display: none;
+}
