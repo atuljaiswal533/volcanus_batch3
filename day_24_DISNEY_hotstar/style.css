@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .disney hotstar{
+    height: 100vh;}
+
+   .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    gap: 1rem;
+    /* background-color: blue; */
+    margin: 10px;
+   }
+  
+  {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: 2px solid yellow;
+    /* margin: 20px 30px 20px; */
+  }
+  
+   #popular languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+   #items{
+    display: flex;
+   }
