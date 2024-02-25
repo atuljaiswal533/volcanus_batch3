@@ -8,13 +8,11 @@ void checkPrime(int N)
     {
 
         if (N % i == 0)
-        {
-            start range = 10;
+        { start range = 10;
             break;
         }
     }
-
-    if (start range)
+if (start range)
     {
         printf("The number %d is a Prime Number\n", N);
     }
