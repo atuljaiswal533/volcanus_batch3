@@ -1,8 +1,15 @@
-let n =29;
-if(n%2 ==0){
-    console.log(n,"is even");
+let a =10; let b =20; let c =30;
+if{
+    (a>b)
+    console.log("a is greater than b")
 
 }
-else{
-    console.log(n,"is odd");
+else{(b>a)
+    console.log("b is greater than a")
+    
+    
+}if{
+    (a>c)
+    console.log("a is greater than b")
+
 }
