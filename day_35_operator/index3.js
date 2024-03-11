@@ -2,17 +2,20 @@
 <html>
 <body>
 
-<h1>JavaScript Assignments</h1>
-<h2>Right Shift Assignment</h2>
-<h3>The >>= Operator</h3>
+<h1>JavaScript Strings</h1>
+<p>Strings are written inside quotes. You can use single or double quotes:</p>
 
 <p id="demo"></p>
 
 <script>
-let x = -100;
-x >>= 5;
-document.getElementById("demo").innerHTML = "Value of x is: " + x;
+let carName1 = "Volvo XC60"; // Double quotes
+let carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
 </script>
 
 </body>
 </html>
+
+
