@@ -1,41 +1,28 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-	<h1 style="color:green"> 
-		atul jaiaswwal
-	</h1> 
-	<h2>setAttributeMethod</h2> 
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 style="color: green">atul jaiaswwal</h1>
+    <h2>setAttributeMethod</h2>
 
-	<a ></a> 
-<div class="para1" id="para" style="color: aqua;" class="para3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, commodi. Vero assumenda officiis ducimus deserunt quisquam quis sequi nostrum aliquam ipsa sunt ea qui quos ipsam minus eaque, veniam inventore.</div>
-	<p id="para2"> 
-		Click the button below to add an href 
-		attribute to the element above. 
-	</p> 
-	<h1>hjgjhgjyhgh</h1>
+    <a></a>
+    <div class="para1" id="para" style="color: aqua" class="para3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+      commodi. Vero assumenda officiis ducimus deserunt quisquam quis sequi
+      nostrum aliquam ipsa sunt ea qui quos ipsam minus eaque, veniam inventore.
+    </div>
+    <p id="para2">
+      Click the button below to add an href attribute to the element above.
+    </p>
+    <h1>hjgjhgjyhgh</h1>
 
-	<button ondblclick="display()" >on mousehover</button>>
+    <button id="click_me">click_me</button>>
 
-	<script> 
-	function display() {
-		
-	
-	console.log("heloo")}
-	
-		
+    <script>
+      let data = document.getElementById("click_me");
 
-		// let element = document.getElementById("para").setAttribute("class","and")
-		//  element = document.getElementById("para").getAttribute("class")
-
-		
-		// console.log(element)
-		// element=document.getElementById("para").setAttribute("style","border:6px solid green")
-
-
-
-
-
-		
-	</script> 
-</body> 
+      data.addEventListener("click", () => {
+        console.log("Click by eventListener");
+      });
+    </script>
+  </body>
 </html>
