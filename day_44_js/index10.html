@@ -13,14 +13,47 @@
 		Submit
 	</button>
 	<script>
-		function geeks() {
-			document.getElementById("MY1").style.color
-				= "green";
-			document.getElementById("MY2").style.color
-				= "black";
-			document.getElementById("MY3").style.color
-				= "blue";
-		}
+		// function geeks() {
+		// 	document.getElementById("MY1").style.color
+		// 		= "green";
+		// 	document.getElementById("MY2").style.color
+		// 		= "black";
+		// 	document.getElementById("MY3").style.color
+		// 		= "blue";
+		// }
+
+
+// 		function add(a){
+//     return function(b){
+//     return function(c){
+//         return a+b+c;
+//     }
+
+
+//     }
+// }
+// let sum =add(2);
+// let sum1 =sum(3);
+// let sum2 =sum1(4);
+
+// console.log(add(2)(3)(4));// cuuring function
+
+
+function adds(a){
+	return function(b){
+		if(b) return adds(a+b);
+		return a;
+	}
+}
+
+
+console.log(adds(2)(3)(4)(6)(7)());// cuuring function
+
+
+
+
+
+
 	</script>
 </body>
 </html>

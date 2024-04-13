@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1 style="color: green">atul jaiaswwal</h1>
+    <!-- <h1 style="color: green">atul jaiaswwal</h1>
     <h2>setAttributeMethod</h2>
 
     <a></a>
@@ -13,16 +13,28 @@
     <p id="para2">
       Click the button below to add an href attribute to the element above.
     </p>
-    <h1>hjgjhgjyhgh</h1>
+    <h1>hjgjhgjyhgh</h1> -->
+    
 
-    <button id="click_me">click_me</button>>
-
+    <button onclick="newWindow()">open</button>
+    <!-- <button onclick="closeWindow()">close</button> -->
+    <button onclick="resizeBy()">resizeBy</button>
     <script>
-      let data = document.getElementById("click_me");
+var mywindow;
 
-      data.addEventListener("click", () => {
-        console.log("Click by eventListener");
-      });
+function newWindow(){
+
+
+  mywindow=window.open("","","width=200px, height=200px,left=200px,top=200px")
+
+  mywindow.document.write("<h1> Hello window</h>")
+  }
+  function resizeBy(){
+    mywindow.resizeBy(400,400)
+  }
+
+
+      
     </script>
   </body>
 </html>
