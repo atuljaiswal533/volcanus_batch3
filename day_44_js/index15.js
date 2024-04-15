@@ -20,3 +20,9 @@ let millisec = DateObj.getMilliseconds();
 
 // Printing millisecond
 console.log(millisec);
+
+
+let str = new String('Create String with String Constructor'); 
+
+console.log(str);
+
