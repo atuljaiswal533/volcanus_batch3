@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="dark">darkh</button>
+    <button id="light">light</button>
+
+    <script>
+      const btnDark = document.querySelector("#dark");
+      const btnLight = document.querySelector("#light");
+
+      const changeDark = () => {
+        const body = document.querySelector("body");
+        // body.style.backgroundColor = 'black'
+        body.style.backgroundColor = "black";
+        console.log(body);
+      };
+      
+      const changeLight = () => {
+        const body = document.querySelector("body");
+        body.style.backgroundColor = "white";
+        console.log(body);
+
+      };
+
+      btnDark.addEventListener("click", changeDark);
+      btnLight.addEventListener("click", changeLight);
+
+    </script>
+  </body>
+</html>
