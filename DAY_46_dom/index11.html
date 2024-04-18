@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><input type="text"></title>
+    <title>Calculator</title>
 
     <style>
       body {
@@ -22,23 +22,24 @@
     <br />
 
     <h1></h1>
-    <input type="submit" value="add" id="btnz" />
-    <input type="submit" value="substarct" id="sustract" />
-    <input type="submit" value="multiply" id="multiply" />
-    <input type="submit" value="divide" id="divide" />
+    <input type="button" value="add" id="add" />
+    <input type="button" value="subtract" id="subtract" />
+    <input type="button" value="multiply" id="multiply" />
+    <input type="button" value="divide" id="divide" />
 
     <script>
       let input1;
       let input2;
+
       const getInputValue = () => {
-        const input1 = parseInt(document.querySelector("#i1").value) ;
-        const input2 = parseInt(document.querySelector("#i2").value) ;
+         input1 = parseInt(document.querySelector("#i1").value);
+         input2 = parseInt(document.querySelector("#i2").value);
       };
       document.querySelector("#add").addEventListener("click", () => {
         document.querySelector("h1").innerText = input1 + input2;
       });
 
-      document.querySelector("#sustract").addEventListener("click", () => {
+      document.querySelector("#subtract").addEventListener("click", () => {
         document.querySelector("h1").innerText = input1 - input2;
       });
 
@@ -47,7 +48,11 @@
       });
 
       document.querySelector("#divide").addEventListener("click", () => {
-        document.querySelector("h1").innerText = input1 / input2;
+        if (input2 !== 0) {
+          document.querySelector("h1").innerText = input1 / input2;
+        } else {
+          document.querySelector("h1").innerText = "Cannot divide by zero";
+        }
       });
     </script>
   </body>
