@@ -11,3 +11,10 @@ for(let i=1; i<arr.length;i++ ){
     }
 }
 console.log(SecondHigh);
+
+
+// merging an array
+// dividing an array 
+// finding lowest value 
+//traversing and loging the array
+// finding second highest 
