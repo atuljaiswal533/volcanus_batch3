@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+<script>
+
+    // Define a function to multiply two numbers and display the result
+function multiplyBy() {
+    // Get the values of the input fields with the ids "firstNumber" and "secondNumber"
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+
+    // Set the inner HTML of the element with the id "result" to the product of the two numbers
+    document.getElementById("result").innerHTML = num1 * num2;
+}
+
+// Define a function to divide two numbers and display the result
+function divideBy() {
+    // Get the values of the input fields with the ids "firstNumber" and "secondNumber"
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+
+    // Set the inner HTML of the element with the id "result" to the quotient of the two numbers
+    document.getElementById("result").innerHTML = num1 / num2;
+} 
+
+</script>
+</body>
+</html>
+
+
+<!-- //यहाँ एक HTML पृष्ठ है जिसमें दो नंबर का गुणा और भाग किया जा सकता है।
+
+- `<!DOCTYPE html>`: यह एक डॉक्यूमेंट टाइप डिफिनिशन है जो ब्राउज़र को बताता है कि यह HTML5 दस्तावेज़ है।
+- `<html>`: HTML दस्तावेज़ का शुरुआती टैग।
+- `<head>`: यहाँ डॉक्यूमेंट के मेटा-डेटा और शीर्षक शामिल होते हैं।
+- `<meta charset=utf-8 />`: यह डॉक्यूमेंट की वर्डनिकोड अद्यतन करता है, जिससे वेब पृष्ठ UTF-8 विन्यास का उपयोग कर सकता है।
+- `<title>`: पृष्ठ का शीर्षक।
+- `<style>`: CSS को स्टाइल करने के लिए उपयोग किया जाता है।
+- `<body>`: यहाँ पृष्ठ की मुख्य विषय-संदेश और उपयोगकर्ता के लिए वेब पृष्ठ का कार्यक्षेत्र होता है।
+- `<form>`: एक फॉर्म शुरू करता है, जिसमें उपयोगकर्ता से डेटा प्राप्त किया जा सकता है।
+- `<input type="text">`: उपयोगकर्ता से इनपुट लेने के लिए एक टेक्स्ट इनपुट बॉक्स।
+- `<input type="button">`: एक बटन जिसके क्लिक करने पर कोई कार्य होगा।
+- `onClick="multiplyBy()"`: "multiplyBy" फ़ंक्शन को बटन क्लिक करने पर चलाने के लिए निर्दिष्ट करता है।
+- `document.getElementById("firstNumber").value`: पहले और दूसरे इनपुट बॉक्स में उपयोगकर्ता द्वारा दिए गए मूल्य को प्राप्त करता है।
+- `document.getElementById("result").innerHTML = num1 * num2;`: इनपुट फ़ील्ड्स के माध्यम से प्राप्त किए गए मूल्यों का गुणा लेता है और परिणाम को "result" एलिमेंट के अंदर दिखाता है।
+- `document.getElementById("result").innerHTML = num1 / num2;`: इनपुट फ़ील्ड्स के माध्यम से प्राप्त किए गए मूल्यों का भाग लेता है और परिणाम को "result" एलिमेंट के अंदर दिखाता है।// -->
