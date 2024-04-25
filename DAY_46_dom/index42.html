@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
-   <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sum(n1, n2) {
+        console.log(`sum of ${n1} and ${n2} = ${n1 + n2}`);
+        alert(`sum of ${n1} and ${n2} = ${n1 + n2}`);
+      }
+      function sub(n1, n2) {
+        console.log(`sum of ${n1} and ${n2} = ${n1 - n2}`);
+        alert(`sum of ${n1} and ${n2} = ${n1 - n2}`);
+      }
+      function mul(n1, n2) {
+        console.log(`sum of ${n1} and ${n2} = ${n1 * n2}`);
+        alert(`sum of ${n1} and ${n2} = ${n1 * n2}`);
+      }
+      function div(n1, n2) {
+        console.log(`sum of ${n1} and ${n2} = ${n1 / n2}`);
+        alert(`sum of ${n1} and ${n2} = ${n1 / n2}`);
+      }
 
+      let userOperation = prompt(" enter the operation : add , sub,mul,div");
+      let userChoice1 = parseInt(prompt("Enter the first number"));
 
-function sum(n1,n2){
-   
-    console.log(`sum of ${n1} and ${n2} = ${n1+n2}`)
-    alert (`sum of ${n1} and ${n2} = ${n1+n2}`)
+      let userChoice2 = parseInt(prompt("Enter the second  number"));
 
+      switch (userOperation) {
+        case "add":
+          sum(userChoice1, userChoice2);
+          break;
 
- }
- function sub(n1,n2){
-    console.log(`sum of ${n1} and ${n2} = ${n1-n2}`)
-     alert (`sum of ${n1} and ${n2} = ${n1-n2}`)
- }
- function mul(n1,n2){
-    console.log(`sum of ${n1} and ${n2} = ${n1*n2}`)
-    alert (`sum of ${n1} and ${n2} = ${n1*n2}`)
-
-
- }
- function div(n1,n2){
-    console.log(`sum of ${n1} and ${n2} = ${n1/n2}`)
-    alert (`sum of ${n1} and ${n2} = ${n1/n2}`)
-
-
-
-
- }
-
-
- let userOperation = prompt(" enter the operation : add , sub,mul,div")
- let userChoice1 =parseInt(prompt("Enter the first number"))
-
- let userChoice2 =parseInt(prompt("Enter the second  number"))
- 
-
- switch(userOperation){
-    case 'add': sum(userChoice1,userChoice2);
-    break;
-
-    case 'sub': sub(userChoice1,userChoice2);
-    break;
-    case 'mul': mul(userChoice1,userChoice2);
-    break;
-    case 'div': div(userChoice1,userChoice2);
-    break;
- }
-
-   </script>
-</body>
+        case "sub":
+          sub(userChoice1, userChoice2);
+          break;
+        case "mul":
+          mul(userChoice1, userChoice2);
+          break;
+        case "div":
+          div(userChoice1, userChoice2);
+          break;
+      }
+    </script>
+  </body>
 </html>
