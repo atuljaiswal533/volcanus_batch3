@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+      }
+      #mealdata {
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 600px; */
+        /* width: 800px; */
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        margin-top: 2rem;
+        margin: auto;
+        /* border-radius: 20px; */
+      }
+      img {
+        border-radius: 20px;
+        height: 200px;
+        width: 700px;
+      }
+      img.hover {
+      }
+      .btn {
+        background-color: antiquewhite;
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="indian" onclick="onmouseover"> indian</button>
+    <button id="ameraican" onclick="onmouseover">ameraican</button>
+    <button id="candian" onclick="onmouseover">candian</button>
+    <button id="austrilan" onclick="onmouseover">austrilan</button>
+
+    <div id="mealdata"></div>
+    <h3>fetcthinh data from mealdb api</h3>
+
+    <script src="fetxh_data_mealDB.js"></script>
+  </body>
+</html>
