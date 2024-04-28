@@ -23,8 +23,9 @@
         console.log(`sum of ${n1} and ${n2} = ${n1 / n2}`);
         alert(`sum of ${n1} and ${n2} = ${n1 / n2}`);
       }
-      let userOperation = prompt(" ");
-      
+      let userOperation = prompt(" what wana to calculate :1)currency  convertor,2)simple calculator ,3)area calcu, simple int& compound int");
+
+
       let userOperation2 = prompt(" enter the operation : add , sub,mul,div");
       let userChoice1 = parseInt(prompt("Enter the first number"));
 
@@ -45,6 +46,27 @@
           div(userChoice1, userChoice2);
           break;
       }
+
+      const p2= parseInt(prompt(" currency convertor : 1)indian rupees to dollar ,2)indian to japnese,3)indian to yen,4)indian to peeso"))
+
+      case 2:  const p2=parseInt(prompt("what you want to calculate 1)simple interest 2) compund interest"))
+                    switch(p4)
+                    {
+                            case 1: const o=parseInt(prompt("enter the principla value"))
+                                    const r=parseInt(prompt("enter the rate"));
+                                    const t=parseInt(prompt("enter the time"));
+                                    const simple=(o*r*t)/100;
+                                    console.log(simple);
+                                    break;
+                            case2:
+                            const o1=parseInt(prompt("enter the principla value"))
+                            const r1=parseInt(prompt("enter the rate"));
+                            const t1=parseInt(prompt("enter the time"));
+                            const simple1=(o1*r1*t1)/100;
+                            const compund=simple1+o1
+                            console.log(compund);
+                            break;
+                    }
     </script>
   </body>
 </html>
