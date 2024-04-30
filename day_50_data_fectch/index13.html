@@ -1,0 +1,109 @@
+<!-- // test 27 april// -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const p = parseInt(prompt("What do you want to calculate? 1) Currency converter 2) Simple calculator 3) Area & surface area of cylinder 4) Simple interest and compound interest"));
+        switch (p) {
+            case 2:
+                const p1 = parseInt(prompt("What operation do you want to perform? 1) Addition 2) Subtraction 3) Division 4) Multiplication"));
+                switch (p1) {
+                    case 1:
+                        let a = parseInt(prompt("Enter first number"));
+                        let b = parseInt(prompt("Enter the second number"));
+                        let c = a + b;
+                        console.log(c);
+                        break;
+                    case 2:
+                        let a1 = parseInt(prompt("Enter first number"));
+                        let b1 = parseInt(prompt("Enter the second number"));
+                        let c1 = a1 - b1;
+                        console.log(c1);
+                        break;
+                    case 3:
+                        let a2 = parseInt(prompt("Enter first number"));
+                        let b2 = parseInt(prompt("Enter the second number"));
+                        let c2 = a2 * b2;
+                        console.log(c2);
+                        break;
+                    case 4:
+                        let a3 = parseInt(prompt("Enter first number"));
+                        let b3 = parseInt(prompt("Enter the second number"));
+                        let c3 = a3 / b3;
+                        console.log(c3);
+                        break;
+                }
+                break;
+            case 1:
+                const p2 = parseInt(prompt("Currency converter: 1) Change into dollar 2) Change into yen 3) INR to pound"));
+                switch (p2) {
+                    case 1:
+                        const s = parseInt(prompt("Enter the INR value that you want to convert into dollar"));
+                        const s1 = s / 86;
+                        console.log(`${s1} dollar`);
+                        break;
+                    case 2:
+                        const s3 = parseInt(prompt("Enter the INR value that you want to convert into yen"));
+                        const s4 = s3 / 200;
+                        console.log(`${s4} yen`);
+                        break;
+                    case 3:
+                        const s6 = parseInt(prompt("Enter the INR value that you want to convert into pound"));
+                        const s7 = s6 * 5;
+                        console.log(`${s7} pound`);
+                        break;
+                }
+                break;
+            case 3:
+                const p3 = parseInt(prompt("What do you want to calculate? 1) Area of cylinder 2) Surface area of cylinder"));
+                switch (p3) {
+                    case 1:
+                        const t1 = parseInt(prompt("Enter the radius"));
+                        const t2 = parseInt(prompt("Enter the height"));
+                        const area = 3.14 * t1 * t1 * t2;
+                        console.log(area);
+                        break;
+                    case 2:
+                        const t3 = parseInt(prompt("Enter the radius"));
+                        const t4 = parseInt(prompt("Enter the height"));
+                        const area1 = 2 * 3.14 * t3 * (t3 + t4);
+                        console.log(area1);
+                        break;
+                }
+                break;
+            case 4:
+                const p4 = parseInt(prompt("What do you want to calculate? 1) Simple interest 2) Compound interest"));
+                switch (p4) {
+                    case 1:
+                        const o = parseInt(prompt("Enter the principal value"));
+                        const r = parseInt(prompt("Enter the rate"));
+                        const t = parseInt(prompt("Enter the time"));
+                        const simple = (o * r * t) / 100;
+                        console.log(simple);
+                        break;
+                    case 2:
+                        const o1 = parseInt(prompt("Enter the principal value"));
+                        const r1 = parseInt(prompt("Enter the rate"));
+                        const t1 = parseInt(prompt("Enter the time"));
+                        const simple1 = (o1 * r1 * t1) / 100;
+                        const compound = simple1 + o1;
+                        console.log(compound);
+                        break;
+                }
+                break;
+        }
+    </script>
+</body>
+</html>
