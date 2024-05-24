@@ -41,6 +41,15 @@
 
 
 // }
+// 	calculateCylinderArea(radius, height);
+
+// if (typeof cylinderArea === "number") {
+// 	console
+// } else {
+// 	console.log(cylinderArea);
+
+
+// }
 
 const sArea = (r,h) => 2*Math.PI*r*r+2*Math.PI*r*h;
 
